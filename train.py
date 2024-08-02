@@ -3,8 +3,6 @@ Author: JinYin
 Date: 2023-07-07 09:49:38
 LastEditors: JinYin
 LastEditTime: 2023-12-15 15:37:04
-FilePath: \07_CTFNet\train_semisimulated.py
-Description: 
 '''
 import os
 import time

@@ -1,0 +1,3 @@
+# STFNet
+
+python train.py

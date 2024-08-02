@@ -41,7 +41,7 @@ def train(opts, model):
         optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.5, 0.9), eps=1e-8)
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [30], 0.1)
     elif opts.denoise_network == 'GCTNet':
-        learning_rate = 0.001      # 0.0001
+        learning_rate = 0.001      
         optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.9, 0.99), eps=1e-8)
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [160], 0.1)
     elif opts.denoise_network == 'DuoCL':
@@ -49,11 +49,11 @@ def train(opts, model):
         optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.9, 0.99), eps=1e-8)
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [50], 0.1)
     elif opts.denoise_network == 'NovelCNN':
-        learning_rate = 0.0001       # 0.001
+        learning_rate = 0.0001  
         optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.5, 0.9), eps=1e-8)
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [200], 0.1)
     elif opts.denoise_network == 'STFNet':
-        optimizer = optim.Adam(model.parameters(), lr=0.001, betas=(0.9, 0.99), eps=1e-8)        # transformeer:0.001
+        optimizer = optim.Adam(model.parameters(), lr=0.001, betas=(0.9, 0.99), eps=1e-8)  
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [30], 0.1)
     
     best_val_mse = 10.0   

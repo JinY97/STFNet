@@ -3,7 +3,6 @@ Author: JinYin
 Date: 2022-07-31 16:16:10
 LastEditors: JinYin
 LastEditTime: 2022-10-07 15:02:13
-FilePath: \02_Transformer\models\EEGANet.py
 '''
 from calendar import c
 import torch

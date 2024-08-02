@@ -3,8 +3,6 @@ Author: Yin Jin
 Date: 2022-03-06 13:23:20
 LastEditTime: 2023-11-22 17:34:34
 LastEditors: JinYin
-Description: transformer模型作为输入
-Reference: Transformer for EEG classification
 '''
 import numpy as np
 import math
